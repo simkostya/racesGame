@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8b6-82-IQu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RK3-qt-ESD">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="8b6-82-IQu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h02-9g-6cG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fti-iu-Nna">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="pIW-sD-Vlk" kind="relationship" relationship="rootViewController" id="d3B-9Y-20f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whf-k3-Dic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="212"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gqv-Md-9ak">
+            <objects>
+                <viewController id="pIW-sD-Vlk" customClass="ViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="47y-lC-XCW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlj-Zn-Z1g" userLabel="Main View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="kYp-wQ-TBf">
+                                        <rect key="frame" x="0.0" y="-34" width="414" height="930"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt2-1u-478">
+                                        <rect key="frame" x="132" y="704" width="150" height="150"/>
+                                        <color key="backgroundColor" red="0.1723907888" green="0.4470934272" blue="0.69795042279999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="fZY-AU-fwm"/>
+                                            <constraint firstAttribute="height" constant="150" id="k9X-Mf-aGs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="65"/>
+                                        <state key="normal" title="GO">
+                                            <color key="titleColor" red="0.99993449450000005" green="0.9098476768" blue="0.45093703270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="XNf-2D-Nwm" kind="show" id="hId-lA-Ei0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kYp-wQ-TBf" secondAttribute="bottom" id="E5i-fo-Imw"/>
+                                    <constraint firstItem="kYp-wQ-TBf" firstAttribute="leading" secondItem="rlj-Zn-Z1g" secondAttribute="leading" id="Fea-BE-ZYF"/>
+                                    <constraint firstItem="kYp-wQ-TBf" firstAttribute="top" secondItem="rlj-Zn-Z1g" secondAttribute="top" constant="-34" id="KTS-CF-bcI"/>
+                                    <constraint firstItem="gt2-1u-478" firstAttribute="bottom" secondItem="rlj-Zn-Z1g" secondAttribute="bottomMargin" id="gL7-m7-1nb"/>
+                                    <constraint firstItem="gt2-1u-478" firstAttribute="centerX" secondItem="kYp-wQ-TBf" secondAttribute="centerX" id="jCj-bW-Wex"/>
+                                    <constraint firstItem="gt2-1u-478" firstAttribute="centerX" secondItem="rlj-Zn-Z1g" secondAttribute="centerX" id="lbf-B1-djd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D3h-gx-1Fg"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="centerX" secondItem="47y-lC-XCW" secondAttribute="centerX" id="FW6-Ep-UgY"/>
+                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="leading" secondItem="D3h-gx-1Fg" secondAttribute="leading" id="WfP-D2-mLw"/>
+                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="centerY" secondItem="47y-lC-XCW" secondAttribute="centerY" id="YAV-TA-Vf2"/>
+                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="top" secondItem="47y-lC-XCW" secondAttribute="topMargin" constant="-44" id="ymX-2M-qTJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mPt-TE-BgF"/>
+                    <connections>
+                        <outlet property="startButton" destination="gt2-1u-478" id="oLH-mv-aL5"/>
+                        <outlet property="view" destination="47y-lC-XCW" id="cPM-hw-wmZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7o-aE-p5v" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598.55072463768124" y="211.60714285714286"/>
+        </scene>
+        <!--Main Race View Controller-->
+        <scene sceneID="mOj-v2-2rF">
+            <objects>
+                <viewController id="XNf-2D-Nwm" customClass="MainRaceViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dNk-Yo-if8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-DH-9ca">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="roadPic" translatesAutoresizingMaskIntoConstraints="NO" id="Udi-7e-vTu">
+                                        <rect key="frame" x="-13" y="-1" width="437" height="908"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dy4-S2-IWO" userLabel="StripOne">
+                                        <rect key="frame" x="202" y="52" width="11" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q3B-iZ-a8l" userLabel="StripTwo">
+                                        <rect key="frame" x="202" y="244" width="11" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooK-xj-Psg" userLabel="StripThree">
+                                        <rect key="frame" x="202" y="455" width="11" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjJ-5r-q32" userLabel="StripFour">
+                                        <rect key="frame" x="202" y="647" width="11" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yXi-0g-IOv" userLabel="ViewBorderLeft">
+                                        <rect key="frame" x="4" y="0.0" width="9" height="920"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99210256340000003" green="0.8549416661" blue="0.17649310830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pxb-tc-ebq" userLabel="ViewBorderRight">
+                                        <rect key="frame" x="401" y="0.0" width="9" height="896"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.98818045850000003" green="0.85494178529999998" blue="0.20001289250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pitTwo" translatesAutoresizingMaskIntoConstraints="NO" id="8x3-3g-ati" userLabel="PitRight">
+                                        <rect key="frame" x="263" y="216" width="91" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pit3" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-ua-YEy" userLabel="PitLeft">
+                                        <rect key="frame" x="63" y="439" width="78" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="policeCar" translatesAutoresizingMaskIntoConstraints="NO" id="HaY-Xf-i23" userLabel="PoliceRight">
+                                        <rect key="frame" x="271" y="393" width="60" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYh-0J-b8x">
+                                        <rect key="frame" x="8" y="52" width="60" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="backButton.png"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="XNf-2D-Nwm" eventType="touchUpInside" id="3iq-OS-X7I"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carOne" translatesAutoresizingMaskIntoConstraints="NO" id="lyy-jN-H1N" userLabel="CarOutlet">
+                                        <rect key="frame" x="271" y="709" width="60" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Pof-PQ-w4o" appends="YES" id="bcs-3e-hUg"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="policeCar" translatesAutoresizingMaskIntoConstraints="NO" id="u8e-Cx-5A1" userLabel="PoliceLeft">
+                                        <rect key="frame" x="44" y="216" width="60" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BTa-v9-gNr"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HLH-Y7-Ocz"/>
+                    <connections>
+                        <outlet property="carOutlet" destination="lyy-jN-H1N" id="vkJ-lp-Ajf"/>
+                        <outlet property="mainView" destination="vGG-DH-9ca" id="ohy-7l-PvU"/>
+                        <outlet property="pitLeft" destination="kLE-ua-YEy" id="JgE-uU-Ijp"/>
+                        <outlet property="pitRight" destination="8x3-3g-ati" id="7WR-zS-ZdR"/>
+                        <outlet property="policeLeft" destination="u8e-Cx-5A1" id="dAS-AN-XoP"/>
+                        <outlet property="policeRight" destination="HaY-Xf-i23" id="DaT-h8-q9A"/>
+                        <outlet property="stripFour" destination="gjJ-5r-q32" id="DDf-Os-lpf"/>
+                        <outlet property="stripOne" destination="dy4-S2-IWO" id="v4R-jH-yaH"/>
+                        <outlet property="stripThree" destination="ooK-xj-Psg" id="ee6-4M-ad3"/>
+                        <outlet property="stripTwo" destination="Q3B-iZ-a8l" id="Rue-pj-Tws"/>
+                        <outlet property="viewBorderLeft" destination="yXi-0g-IOv" id="D2H-TL-nFm"/>
+                        <outlet property="viewBorderRight" destination="Pxb-tc-ebq" id="smt-TU-m2E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tcd-zv-fBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Pof-PQ-w4o">
+                    <connections>
+                        <action selector="pan:" destination="XNf-2D-Nwm" id="TmA-06-1M0"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1386.9565217391305" y="211.60714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton.png" width="160" height="121.5"/>
+        <image name="carOne" width="365" height="747.5"/>
+        <image name="pit3" width="1200" height="1200"/>
+        <image name="pitTwo" width="600" height="600"/>
+        <image name="policeCar" width="218.5" height="430.5"/>
+        <image name="roadPic" width="208.5" height="313"/>
+        <image name="viewBack" width="360" height="640"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
