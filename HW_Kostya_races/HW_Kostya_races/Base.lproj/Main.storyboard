@@ -19,79 +19,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="pIW-sD-Vlk" kind="relationship" relationship="rootViewController" id="d3B-9Y-20f"/>
+                        <segue destination="s0b-ed-V4e" kind="relationship" relationship="rootViewController" id="MPL-zw-u7H"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whf-k3-Dic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-201" y="212"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gqv-Md-9ak">
-            <objects>
-                <viewController id="pIW-sD-Vlk" customClass="ViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="47y-lC-XCW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlj-Zn-Z1g" userLabel="Main View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="kYp-wQ-TBf">
-                                        <rect key="frame" x="0.0" y="-34" width="414" height="930"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt2-1u-478">
-                                        <rect key="frame" x="132" y="704" width="150" height="150"/>
-                                        <color key="backgroundColor" red="0.1723907888" green="0.4470934272" blue="0.69795042279999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="fZY-AU-fwm"/>
-                                            <constraint firstAttribute="height" constant="150" id="k9X-Mf-aGs"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="65"/>
-                                        <state key="normal" title="GO">
-                                            <color key="titleColor" red="0.99993449450000005" green="0.9098476768" blue="0.45093703270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="XNf-2D-Nwm" kind="show" id="hId-lA-Ei0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="kYp-wQ-TBf" secondAttribute="bottom" id="E5i-fo-Imw"/>
-                                    <constraint firstItem="kYp-wQ-TBf" firstAttribute="leading" secondItem="rlj-Zn-Z1g" secondAttribute="leading" id="Fea-BE-ZYF"/>
-                                    <constraint firstItem="kYp-wQ-TBf" firstAttribute="top" secondItem="rlj-Zn-Z1g" secondAttribute="top" constant="-34" id="KTS-CF-bcI"/>
-                                    <constraint firstItem="gt2-1u-478" firstAttribute="bottom" secondItem="rlj-Zn-Z1g" secondAttribute="bottomMargin" id="gL7-m7-1nb"/>
-                                    <constraint firstItem="gt2-1u-478" firstAttribute="centerX" secondItem="kYp-wQ-TBf" secondAttribute="centerX" id="jCj-bW-Wex"/>
-                                    <constraint firstItem="gt2-1u-478" firstAttribute="centerX" secondItem="rlj-Zn-Z1g" secondAttribute="centerX" id="lbf-B1-djd"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="D3h-gx-1Fg"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="centerX" secondItem="47y-lC-XCW" secondAttribute="centerX" id="FW6-Ep-UgY"/>
-                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="leading" secondItem="D3h-gx-1Fg" secondAttribute="leading" id="WfP-D2-mLw"/>
-                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="centerY" secondItem="47y-lC-XCW" secondAttribute="centerY" id="YAV-TA-Vf2"/>
-                            <constraint firstItem="rlj-Zn-Z1g" firstAttribute="top" secondItem="47y-lC-XCW" secondAttribute="topMargin" constant="-44" id="ymX-2M-qTJ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="mPt-TE-BgF"/>
-                    <connections>
-                        <outlet property="startButton" destination="gt2-1u-478" id="oLH-mv-aL5"/>
-                        <outlet property="view" destination="47y-lC-XCW" id="cPM-hw-wmZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y7o-aE-p5v" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="598.55072463768124" y="211.60714285714286"/>
+            <point key="canvasLocation" x="-1000" y="212"/>
         </scene>
         <!--Main Race View Controller-->
         <scene sceneID="mOj-v2-2rF">
             <objects>
-                <viewController id="XNf-2D-Nwm" customClass="MainRaceViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainRaceViewController" id="XNf-2D-Nwm" customClass="MainRaceViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNk-Yo-if8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,12 +135,99 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1386.9565217391305" y="211.60714285714286"/>
+            <point key="canvasLocation" x="996" y="212"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lnE-So-WXC">
+            <objects>
+                <viewController id="s0b-ed-V4e" customClass="ViewController" customModule="race_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a6q-Ja-dsb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eN9-fN-E9k" userLabel="Main View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="viewBack" translatesAutoresizingMaskIntoConstraints="NO" id="rl9-2g-gzX">
+                                        <rect key="frame" x="0.0" y="-38" width="414" height="934"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2t-SC-zWu" userLabel="settingsMenuButton">
+                                        <rect key="frame" x="23" y="50" width="53" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.99210160970000005" green="0.85886341330000004" blue="0.18041285870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="menuButton"/>
+                                        <connections>
+                                            <action selector="settingsButtonAction:" destination="s0b-ed-V4e" eventType="touchUpInside" id="eCg-Z2-UpU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt2-1u-478">
+                                        <rect key="frame" x="132" y="704" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1723907888" green="0.4470934272" blue="0.69795042279999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="65"/>
+                                        <state key="normal" title="GO">
+                                            <color key="titleColor" red="0.99993449450000005" green="0.9098476768" blue="0.45093703270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goButtoAction:" destination="s0b-ed-V4e" eventType="touchUpInside" id="nym-A1-Txd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rhI-Jq-BJW" appends="YES" id="v3E-Ca-crQ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bm7-EI-BQg" userLabel="Menu View">
+                                <rect key="frame" x="-262" y="0.0" width="262" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HAMBURGER MENU DONE!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQm-Qa-VI3">
+                                        <rect key="frame" x="37" y="54" width="189" height="288"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hooniganButton" translatesAutoresizingMaskIntoConstraints="NO" id="TIY-HS-Dje">
+                                        <rect key="frame" x="9" y="482" width="240" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GoM-FV-U4g"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mPH-kJ-5wY"/>
+                    <connections>
+                        <outlet property="mainViewOutlet" destination="eN9-fN-E9k" id="FWu-tU-kXY"/>
+                        <outlet property="menuViewOutlet" destination="Bm7-EI-BQg" id="BuO-Sz-AI4"/>
+                        <outlet property="startButton" destination="gt2-1u-478" id="OjQ-IZ-zwk"/>
+                        <outlet property="view" destination="a6q-Ja-dsb" id="Qzs-DJ-BRK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpa-2E-AOo" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rhI-Jq-BJW">
+                    <connections>
+                        <action selector="onTap:" destination="s0b-ed-V4e" id="QEb-Z3-CfV"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="211.60714285714286"/>
         </scene>
     </scenes>
     <resources>
         <image name="backButton.png" width="160" height="121.5"/>
         <image name="carOne" width="365" height="747.5"/>
+        <image name="hooniganButton" width="212" height="300"/>
+        <image name="menuButton" width="256" height="256"/>
         <image name="pit3" width="1200" height="1200"/>
         <image name="pitTwo" width="600" height="600"/>
         <image name="policeCar" width="218.5" height="430.5"/>

@@ -53,7 +53,7 @@ class MainRaceViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Animation of stripes
@@ -116,7 +116,8 @@ class MainRaceViewController: UIViewController {
         
         let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
-            self.navigationController?.popViewController(animated: true)
+//            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
         }
         
         alertController.addAction(alertAction)
