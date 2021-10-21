@@ -155,8 +155,8 @@ class MainRaceViewController: UIViewController {
             pitLeft.image = UIImage(named: "rock")
             pitRight.image = UIImage(named: "rock")
         } else if SettingsViewController.obsImageNumber == 1 {
-            pitLeft.image = UIImage(named: "brick")
-            pitRight.image = UIImage(named: "brick")
+            pitLeft.image = UIImage(named: "pitTwo")
+            pitRight.image = UIImage(named: "pitTwo")
         }
     }
 }

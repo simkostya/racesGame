@@ -22,18 +22,6 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-//        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
-//        lifeLineOne.backgroundColor = .red
-        if isFirstResponder == false {
-            lifeLineOne.backgroundColor = .red
-        } else if isFirstResponder == false {
-            lifeLineTwo.backgroundColor = .red
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,12 +71,7 @@ class ViewController: UIViewController {
         guard self.startButton.layer.shadowColor == UIColor.red.cgColor else { return }
         self.alert()
     }
-    
-    
 
-    
-    
-    
     func alert() {
         
         let password = "1234"
@@ -104,7 +87,7 @@ class ViewController: UIViewController {
             if alert.textFields?.first?.text == password {
                 self.startButton.addShadowsGreen()
             } else {
-                self.popUp(context: self, msg: "Wrong Passworn. Try again")
+                self.popUp(context: self, msg: "Wrong Password. Try again")
             }
             
         }))

@@ -25,7 +25,8 @@ class SettingsViewController: UIViewController {
         carImages.append(UIImage(named: "carThree")!)
         
         obstacleImages.append(UIImage(named: "rock")!)
-        obstacleImages.append(UIImage(named: "brick")!)
+        obstacleImages.append(UIImage(named: "pitTwo")!)
+        
         
         carSelectOutlet.image = carImages[0]
         obstacleSelectOutlet.image = obstacleImages[0]
