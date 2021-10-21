@@ -29,7 +29,7 @@
         <!--Main Race View Controller-->
         <scene sceneID="mOj-v2-2rF">
             <objects>
-                <viewController storyboardIdentifier="MainRaceViewController" id="XNf-2D-Nwm" customClass="MainRaceViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XNf-2D-Nwm" customClass="MainRaceViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNk-Yo-if8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
                                             <action selector="backButton:" destination="XNf-2D-Nwm" eventType="touchUpInside" id="3iq-OS-X7I"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carOne" translatesAutoresizingMaskIntoConstraints="NO" id="lyy-jN-H1N" userLabel="CarOutlet">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carTwo" translatesAutoresizingMaskIntoConstraints="NO" id="lyy-jN-H1N" userLabel="CarOutlet">
                                         <rect key="frame" x="271" y="709" width="60" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
@@ -140,7 +140,7 @@
         <!--View Controller-->
         <scene sceneID="lnE-So-WXC">
             <objects>
-                <viewController id="s0b-ed-V4e" customClass="ViewController" customModule="race_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s0b-ed-V4e" customClass="ViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a6q-Ja-dsb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,17 @@
                                         <rect key="frame" x="0.0" y="-38" width="414" height="934"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJu-jA-p5M" userLabel="gameSettingsButton">
+                                        <rect key="frame" x="341" y="50" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="settingsBtn"/>
+                                        <connections>
+                                            <segue destination="dxb-FM-h4h" kind="show" id="WAx-MN-fSW"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2t-SC-zWu" userLabel="settingsMenuButton">
                                         <rect key="frame" x="23" y="50" width="53" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -163,8 +174,18 @@
                                             <action selector="settingsButtonAction:" destination="s0b-ed-V4e" eventType="touchUpInside" id="eCg-Z2-UpU"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0J-AL-dT1">
+                                        <rect key="frame" x="0.0" y="848" width="138" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAS-bB-Dgi">
+                                        <rect key="frame" x="138" y="848" width="138" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt2-1u-478">
-                                        <rect key="frame" x="132" y="704" width="150" height="150"/>
+                                        <rect key="frame" x="132" y="690" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.1723907888" green="0.4470934272" blue="0.69795042279999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="65"/>
@@ -173,8 +194,14 @@
                                         </state>
                                         <connections>
                                             <action selector="goButtoAction:" destination="s0b-ed-V4e" eventType="touchUpInside" id="nym-A1-Txd"/>
+                                            <segue destination="XNf-2D-Nwm" kind="show" destinationCreationSelector="goBackAction:" id="tB2-jE-5Qj"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htA-j0-1yH">
+                                        <rect key="frame" x="276" y="848" width="138" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <gestureRecognizers/>
@@ -207,6 +234,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="mPH-kJ-5wY"/>
                     <connections>
+                        <outlet property="lifeLineOne" destination="Y0J-AL-dT1" id="Arc-ad-5KH"/>
+                        <outlet property="lifeLineThree" destination="htA-j0-1yH" id="tRn-CB-lwZ"/>
+                        <outlet property="lifeLineTwo" destination="wAS-bB-Dgi" id="wVU-Xf-71e"/>
                         <outlet property="mainViewOutlet" destination="eN9-fN-E9k" id="FWu-tU-kXY"/>
                         <outlet property="menuViewOutlet" destination="Bm7-EI-BQg" id="BuO-Sz-AI4"/>
                         <outlet property="startButton" destination="gt2-1u-478" id="OjQ-IZ-zwk"/>
@@ -222,19 +252,136 @@
             </objects>
             <point key="canvasLocation" x="179.71014492753625" y="211.60714285714286"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="9JH-g6-o2x">
+            <objects>
+                <viewController id="dxb-FM-h4h" customClass="SettingsViewController" customModule="HW_Kostya_races" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fpd-GX-Isq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUA-Dj-4z8">
+                                <rect key="frame" x="20" y="50" width="60" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton.png"/>
+                                <connections>
+                                    <action selector="backToRootButton:" destination="dxb-FM-h4h" eventType="touchUpInside" id="mgw-5B-2oy"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="gjW-AO-FYH">
+                                <rect key="frame" x="132" y="609" width="150" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMk-c5-G3A">
+                                <rect key="frame" x="58" y="261" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="darkTextColor"/>
+                                <state key="normal" image="arrow.left.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="carSelectLeftButton:" destination="dxb-FM-h4h" eventType="touchUpInside" id="Wzb-ui-SPm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="↓ Select a car ↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTY-VI-utB">
+                                <rect key="frame" x="120" y="133" width="175" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="↓ Select an obstacle ↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuA-wL-1b1">
+                                <rect key="frame" x="89" y="539" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="__________________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsx-W2-9oV">
+                                <rect key="frame" x="-29" y="438" width="481" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKa-aA-AHe">
+                                <rect key="frame" x="306" y="261" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="darkTextColor"/>
+                                <state key="normal" image="arrow.right.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="carSelectRightButton:" destination="dxb-FM-h4h" eventType="touchUpInside" id="0vP-tL-s7Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUr-l8-nSr">
+                                <rect key="frame" x="306" y="648" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="darkTextColor"/>
+                                <state key="normal" image="arrow.right.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="obstacleSelectRightButton:" destination="dxb-FM-h4h" eventType="touchUpInside" id="xtw-gp-mGE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNk-iI-eeT">
+                                <rect key="frame" x="58" y="648" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="darkTextColor"/>
+                                <state key="normal" image="arrow.left.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="obstacleSelectLeftButton:" destination="dxb-FM-h4h" eventType="touchUpInside" id="cJN-QT-fnV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carOne" translatesAutoresizingMaskIntoConstraints="NO" id="TZE-Ah-zJ2">
+                                <rect key="frame" x="154" y="196" width="101" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZqK-lZ-3bY"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kYM-Nh-1t7"/>
+                    <connections>
+                        <outlet property="carSelectOutlet" destination="TZE-Ah-zJ2" id="Klo-t9-Rda"/>
+                        <outlet property="obstacleSelectOutlet" destination="gjW-AO-FYH" id="7Nd-j2-C5s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyK-tG-kCl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="955.58035714285711"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="backButton.png" width="160" height="121.5"/>
         <image name="carOne" width="365" height="747.5"/>
+        <image name="carTwo" width="400" height="400"/>
         <image name="hooniganButton" width="212" height="300"/>
         <image name="menuButton" width="256" height="256"/>
         <image name="pit3" width="1200" height="1200"/>
         <image name="pitTwo" width="600" height="600"/>
         <image name="policeCar" width="218.5" height="430.5"/>
         <image name="roadPic" width="208.5" height="313"/>
+        <image name="rock" width="374.5" height="400"/>
+        <image name="settingsBtn" width="273.5" height="269.5"/>
         <image name="viewBack" width="360" height="640"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

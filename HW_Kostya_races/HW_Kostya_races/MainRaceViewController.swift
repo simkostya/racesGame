@@ -35,6 +35,8 @@ class MainRaceViewController: UIViewController {
         stripeAnimations()
         timer()
         animationsForCrash()
+        carImageInGame()
+        obsImageInGame()
     }
     
     // MARK: - Moving the car
@@ -53,7 +55,7 @@ class MainRaceViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Animation of stripes
@@ -116,8 +118,7 @@ class MainRaceViewController: UIViewController {
         
         let alertController = UIAlertController(title: " CRASH ", message: "try again", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Go back", style: .default) { (_) in
-//            self.navigationController?.popViewController(animated: true)
-            self.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
         }
         
         alertController.addAction(alertAction)
@@ -137,5 +138,25 @@ class MainRaceViewController: UIViewController {
         
         policeLeft.center = CGPoint(x: policeLeft.center.x + randomNum, y: -300 + randomNum)
         policeRight.center = CGPoint(x: policeRight.center.x - randomNum, y: -400 - randomNum)
+    }
+    
+    func carImageInGame() {
+        if SettingsViewController.carImageNumber == 0 {
+            carOutlet.image = UIImage(named: "carOne")
+        } else if SettingsViewController.carImageNumber == 1 {
+            carOutlet.image = UIImage(named: "carTwo")
+        } else if SettingsViewController.carImageNumber == 2 {
+            carOutlet.image = UIImage(named: "carThree")
+        }
+    }
+    
+    func obsImageInGame() {
+        if SettingsViewController.obsImageNumber == 0 {
+            pitLeft.image = UIImage(named: "rock")
+            pitRight.image = UIImage(named: "rock")
+        } else if SettingsViewController.obsImageNumber == 1 {
+            pitLeft.image = UIImage(named: "brick")
+            pitRight.image = UIImage(named: "brick")
+        }
     }
 }

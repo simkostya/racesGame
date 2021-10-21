@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B5CDF3F2721A6B500782F64 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5CDF3E2721A6B500782F64 /* SettingsViewController.swift */; };
 		8BDD633C270F2A1B00EF46BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD633B270F2A1B00EF46BE /* AppDelegate.swift */; };
 		8BDD633E270F2A1B00EF46BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD633D270F2A1B00EF46BE /* SceneDelegate.swift */; };
 		8BDD6340270F2A1B00EF46BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD633F270F2A1B00EF46BE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B5CDF3E2721A6B500782F64 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8BDD6338270F2A1B00EF46BE /* HW_Kostya_races.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Kostya_races.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDD633B270F2A1B00EF46BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDD633D270F2A1B00EF46BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				8BDD633D270F2A1B00EF46BE /* SceneDelegate.swift */,
 				8BDD633F270F2A1B00EF46BE /* ViewController.swift */,
 				8BDD6350270F2C7800EF46BE /* MainRaceViewController.swift */,
+				8B5CDF3E2721A6B500782F64 /* SettingsViewController.swift */,
 				8BDD6341270F2A1B00EF46BE /* Main.storyboard */,
 				8BDD6344270F2A1E00EF46BE /* Assets.xcassets */,
 				8BDD6346270F2A1E00EF46BE /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				8BDD6340270F2A1B00EF46BE /* ViewController.swift in Sources */,
 				8BDD633C270F2A1B00EF46BE /* AppDelegate.swift in Sources */,
 				8BDD6351270F2C7800EF46BE /* MainRaceViewController.swift in Sources */,
+				8B5CDF3F2721A6B500782F64 /* SettingsViewController.swift in Sources */,
 				8BDD633E270F2A1B00EF46BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
